@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Curio::Application.config.secret_key_base = '566ec01345b413fe851154b8bf21c783b2ae44bff900180c2585ef71814bd7c4e3c60eda0568c44184f11b4ad1e27e07a98713622e43486e25badb77e89ccbf0'
+Curio::Application.config.secret_key_base = ENV['SECRET_TOKEN'] || "localonly"
