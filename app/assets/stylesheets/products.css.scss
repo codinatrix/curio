@@ -1,0 +1,53 @@
+// Place all the styles related to the Products controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  background-image:url('/img/bg.jpg');
+}
+
+@media (min-width: 1340px) {
+  .container {
+      width: 1320px;
+  }
+}
+
+.item {
+  //width: 280px;
+  //margin: 20px;
+  border-radius: 3px;
+}
+
+.post_img_wrap,  .post_text_wrap{
+  margin: 0 auto;
+  padding: 15px;
+  background-color: #FFF;
+}
+
+.post_img_wrap img{
+  width: 100%;
+}
+
+.post_img_wrap {
+  border-radius: 3px 3px 0px 0px;
+  box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+}
+
+.post_text_wrap{
+  margin-bottom: 20px;
+  background-color: #F2F0F0;
+  border-top: 1px solid #D9D4D4;
+  box-shadow: 0 1px #FCFAFA inset;
+  clear: both;
+  color: #999999;
+  font-size: 11px;
+  overflow: hidden;
+  padding: 7px 11px;
+  transition: all 0.4s ease 0s;
+  border-radius: 0px 0px 3px 3px;
+  box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+}
+
+#about_img {
+  width: 100%;
+}

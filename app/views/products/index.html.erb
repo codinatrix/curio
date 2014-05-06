@@ -1,0 +1,23 @@
+<div id="posts" class="isotope row">
+
+	<div class="item col-md-6">
+		<img class="corner-stamp" src="/img/about.jpg" id="about_img">
+	</div>
+    <% @products.each do |product| %>
+      <div class="item col-md-3">
+      	<div class="post_img_wrap">
+      		<img class="" src="/img/post_img/<%= product.id %>.jpg">
+      	</div>
+      	<div class="post_text_wrap">
+	      	<%= product.name %><br>
+	        <%= product.blurb %><br>
+	        <%= link_to 'Show', product %>
+	        <%= link_to 'Edit', edit_product_path(product) %>
+	        <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </div>
+      </tr>
+      </div>
+    <% end %>
+</div>
+
+<%= link_to 'New Product', new_product_path %>
