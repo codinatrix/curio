@@ -4,6 +4,7 @@
 
 body {
   background-image:url('/img/bg.jpg');
+  padding-top: 20px;
 }
 
 @media (min-width: 1340px) {
@@ -48,6 +49,12 @@ body {
   box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
 }
 
+.corner-stamp {
+ 
+}
+
 #about_img {
   width: 100%;
+  margin-bottom: 20px;
+  border-radius: 5px;
 }
