@@ -2,7 +2,7 @@ body {
   background-color:#fcfcfc;
   background-image:url('/img/bg.jpg');
   padding-top: 20px;
-
+  font-family: 'Open Sans', sans-serif;
 }
 
 .container { width: auto; }
@@ -39,7 +39,7 @@ body {
   border-radius: 0px 0px 3px 3px;
   border-top: 1px solid #D9D4D4;
   box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
-  color: #999999;
+  color: #333333;
   font-size: 14px;
   padding: 7px 11px;
 }
@@ -50,6 +50,7 @@ body {
   color: #683822;
   font-weight: bold;
   text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
+  font-family: 'PT Sans', sans-serif;
 }
 
 
