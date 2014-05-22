@@ -5,9 +5,15 @@ body {
 
 }
 
+.container { width: auto; }
+
 .row {
    margin-left:0;
    margin-right:0;
+}
+
+.item {
+  width: 310px;
 }
 
 .item img.image {
@@ -48,9 +54,9 @@ body {
 
 
 .corner-stamp {
-    width: 660px;
-    height: 424px;
-    padding: 15px;
+    width: 630px;
+    height: 414px;
+    padding: 0px 15px 15px 0px;
 }
 
 .corner-stamp img {
