@@ -1,60 +1,109 @@
-// Place all the styles related to the Products controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-
 body {
+  background-color:#fcfcfc;
   background-image:url('/img/bg.jpg');
   padding-top: 20px;
+
 }
 
-@media (min-width: 1340px) {
-  .container {
-      width: 1320px;
-  }
+.row {
+   margin-left:0;
+   margin-right:0;
 }
 
-.item {
-  //width: 280px;
-  //margin: 20px;
+.item img.image {
+  max-width: 100%;
+  margin-top: 9px;
+}
+
+.well {
+  background-color: #FFFFFF;
+  padding: 0px;
+  -webkit-box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+  -moz-box-shadow:    0 1px 3px rgba(34, 25, 25, 0.4);
+  box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+  border: none;
+}
+
+.well img {
+  padding: 10px;
+}
+
+.info {
+  background-color: #F2F0F0;
+  border-radius: 0px 0px 3px 3px;
+  border-top: 1px solid #D9D4D4;
+  box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+  color: #999999;
+  font-size: 14px;
+  padding: 7px 11px;
+}
+
+.info h2 {
+  font-size: 20px;
+  margin: 0px;
+  color: #683822;
+  font-weight: bold;
+  text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
+}
+
+
+.corner-stamp {
+    width: 660px;
+    height: 424px;
+    padding: 15px;
+}
+
+.corner-stamp img {
   border-radius: 3px;
 }
 
-.post_img_wrap,  .post_text_wrap{
-  margin: 0 auto;
-  padding: 15px;
-  background-color: #FFF;
+
+/* Isotope Transitions
+------------------------------- */
+.isotope,
+.isotope .item {
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+      -ms-transition-duration: 0.8s;
+       -o-transition-duration: 0.8s;
+          transition-duration: 0.8s;
 }
 
-.post_img_wrap img{
-  width: 100%;
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+      -ms-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
 }
 
-.post_img_wrap {
-  border-radius: 3px 3px 0px 0px;
-  box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+.isotope .item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+      -ms-transition-property:     -ms-transform, opacity;
+       -o-transition-property:         top, left, opacity;
+          transition-property:         transform, opacity;
+}
+  
+  
+/* responsive media queries */
+
+@media (max-width: 768px) {
+  header h1 small {
+    display: block;
+  }
+
+  header div.description {
+    padding-top: 9px;
+    padding-bottom: 4px;
+  }
+
+  .isotope .item {
+    position: static ! important;
+    -webkit-transform: translate(0px, 0px) ! important;
+       -moz-transform: translate(0px, 0px) ! important;
+            transform: translate(0px, 0px) ! important;
+  }
 }
 
-.post_text_wrap{
-  margin-bottom: 20px;
-  background-color: #F2F0F0;
-  border-top: 1px solid #D9D4D4;
-  box-shadow: 0 1px #FCFAFA inset;
-  clear: both;
-  color: #999999;
-  font-size: 11px;
-  overflow: hidden;
-  padding: 7px 11px;
-  transition: all 0.4s ease 0s;
-  border-radius: 0px 0px 3px 3px;
-  box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
-}
 
-.corner-stamp {
- 
-}
-
-#about_img {
-  width: 100%;
-  margin-bottom: 20px;
-  border-radius: 5px;
-}

@@ -1,14 +1,13 @@
 $(window).load(function(){ 
-	var $posts = $('#posts').imagesLoaded( function() {
-		$posts.isotope({
-		  itemSelector: '.item',
-		  masonry: {
-		    columnWidth: 330,
-		    cornerStampSelector: '.corner-stamp'
-		  }
-		});
-	});
-	
+	$('#posts').imagesLoaded( function(){
+	    $('#posts').isotope({
+	      itemSelector : '.item',
+	      masonry: {
+	        cornerStampSelector: '.corner-stamp',
+	        columnWidth : 20
+	      }
+	    });
+  });
 
 });
 
