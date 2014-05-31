@@ -5,7 +5,29 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-.container { width: auto; }
+.container { 
+  width: 1320px;
+}
+
+@media (max-width: 1320px) {
+  .container { 
+    width: 1000px;
+  }
+}
+
+@media (max-width: 1052px) {
+  .container { 
+    width: 680px;
+  }
+}
+
+@media (max-width: 700px) {
+  .container { 
+    width: 320px;
+  }
+}
+
+
 
 .row {
    margin-left:0;
