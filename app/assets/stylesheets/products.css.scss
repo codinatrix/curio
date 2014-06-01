@@ -1,5 +1,10 @@
+html {
+  height: 100%;
+}
+
 body {
-  background-color:#fcfcfc;
+  height: 100%;
+  background-color:#91866E;
   background-image:url('/img/bg.jpg');
   padding-top: 20px;
   font-family: 'Open Sans', sans-serif;
@@ -99,28 +104,34 @@ body {
 
 .info a {
   text-shadow: 0 0 1px rgba(111, 134, 134, 0.3);
+  color: #000000;
 }
 
 .info a:hover {
-  color: #000000;
-  background-color: #F2F0F0;
   text-decoration: none;
 }
 
 .info a:hover:before, .info a:focus:before {
     opacity: 1;
+    -webkit-transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
+    -moz-transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
     transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
 }
 
 .info a:before {
-    color: #00A6B9;
+    color: #47EDFF;
     content: attr(data-hover);
     opacity: 0;
     pointer-events: none;
     position: absolute;
     text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+    -webkit-transform: scale(1.1) translateX(10px) translateY(-10px) rotate(4deg);
+    -moz-transform: scale(1.1) translateX(10px) translateY(-10px) rotate(4deg);
     transform: scale(1.1) translateX(10px) translateY(-10px) rotate(4deg);
-    transition: transform 0.3s ease 0s, opacity 0.3s ease 0s;
+   -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+    -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+    transition: transform 0.3s, opacity 0.3s;
+    pointer-events: none;
 }
 
 .corner-stamp {
@@ -193,3 +204,17 @@ body {
 }
 
 
+/*
+ * Show product page
+ * /
+ */
+
+#product_show_page {
+  padding: 0px;
+}
+
+
+#product_show_page .container {
+  background-color: #FFF;
+  height: 100%;
+}
