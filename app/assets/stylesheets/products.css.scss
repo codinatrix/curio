@@ -146,7 +146,6 @@ body {
     height: 210px;
     padding: 0px;
   }
-  
 }
 
 .corner-stamp img {
@@ -210,11 +209,15 @@ body {
  */
 
 #product_show_page {
-  padding: 0px;
+  //padding: 0px;
 }
 
 
 #product_show_page .container {
   background-color: #FFF;
-  height: 100%;
+  background-image:url('/img/blizzard.png');
+  border-radius: 3px;
+  -webkit-box-shadow: 1px 1px 3px #333333;
+  box-shadow: 1px 1px 3px #333333;
+  padding: 20px;
 }

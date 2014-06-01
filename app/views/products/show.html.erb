@@ -1,20 +1,20 @@
 <% content_for :page_id do %>product_show_page<% end %>
-
-<p id="notice"><%= notice %></p>
-
+Image
 <p>
   <strong>Name:</strong>
-  <%= @product.name %>
-</p>
-
-<p>
-  <strong>Blurb:</strong>
-  <%= @product.blurb %>
+  <%= @product.name %> at <%= @product.company.name %>
+  <a href="http://www.facebook.com/sharer.php?u=<?php if(is_home()){echo home_url();}else{the_permalink();} ?>" target="_blank" title="Share this page on Facebook">Like</a>
+  
 </p>
 
 <p>
   <strong>Description:</strong>
   <%= @product.description %>
+</p>
+
+<p>
+  <%= @product.company.name %><br>
+  <%= @product.company.address %>
 </p>
 
 <%= link_to 'Edit', edit_product_path(@product) %> |
