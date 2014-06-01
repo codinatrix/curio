@@ -9,9 +9,11 @@
   <% @products.each do |product| %>
     <div id="<%= product.id %>" class="item">
         <div class="well">
-          <img class="img-responsive" src="/img/post_img/<%= product.id %>.jpg">
+          <%= link_to product do %>
+          	<img class="img-responsive" src="/img/post_img/<%= product.id %>.jpg">
+          <% end %>
           <div class="info">
-            <h2><%= product.name %></h2>
+            <h2><%= link_to product.name, product, :data => { :hover => product.name } %></h2>
         	<%= product.blurb %>
           </div>
         </div>

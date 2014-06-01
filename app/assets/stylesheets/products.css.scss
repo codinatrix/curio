@@ -50,6 +50,16 @@ body {
   -moz-box-shadow:    0 1px 3px rgba(34, 25, 25, 0.4);
   box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
   border: none;
+  
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+
+.well:hover {
+  -webkit-filter: grayscale(100%);
 }
 
 .well img {
@@ -75,6 +85,31 @@ body {
   font-family: 'PT Sans', sans-serif;
 }
 
+.info a {
+  text-shadow: 0 0 1px rgba(111, 134, 134, 0.3);
+}
+
+.info a:hover {
+  color: #000000;
+  background-color: #F2F0F0;
+  text-decoration: none;
+}
+
+.info a:hover:before, .info a:focus:before {
+    opacity: 1;
+    transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
+}
+
+.info a:before {
+    color: #00A6B9;
+    content: attr(data-hover);
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+    transform: scale(1.1) translateX(10px) translateY(-10px) rotate(4deg);
+    transition: transform 0.3s ease 0s, opacity 0.3s ease 0s;
+}
 
 .corner-stamp {
     width: 630px;
