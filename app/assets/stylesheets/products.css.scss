@@ -146,7 +146,6 @@ body {
     height: 210px;
     padding: 0px;
   }
-  
 }
 
 .corner-stamp img {
@@ -209,12 +208,37 @@ body {
  * /
  */
 
-#product_show_page {
-  padding: 0px;
+
+#product_show_page .post {
+  background-color: #FFF;
+  background-image:url('/img/blizzard.png');
+  border-radius: 3px;
+  -webkit-box-shadow: 1px 1px 3px #333333;
+  box-shadow: 1px 1px 3px #333333;
+  padding: 20px;
 }
 
+#product_show_page h2, #product_show_page .pa{
+  font-family: 'Satisfy', cursive;
+}
 
-#product_show_page .container {
-  background-color: #FFF;
-  height: 100%;
+#product_show_page h2, #product_show_page h3, #product_show_page .pa  {
+  text-align: center;
+  margin: 5px;
+}
+
+#product_show_page h3 {
+  font-family: 'PT Sans', sans-serif;
+  margin-bottom: 10px;
+  color: #5EA7B4;
+}
+
+#product_show_page .pa  {
+  font-size: 1.4em;
+}
+
+#product_show_page #back_home a {
+  font-family: 'PT Sans',sans-serif;
+  color: #A68C7B;
+  text-decoration: none;
 }

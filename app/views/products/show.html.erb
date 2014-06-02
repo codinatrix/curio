@@ -1,21 +1,27 @@
 <% content_for :page_id do %>product_show_page<% end %>
-
-<p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Name:</strong>
-  <%= @product.name %>
-</p>
-
-<p>
-  <strong>Blurb:</strong>
-  <%= @product.blurb %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @product.description %>
-</p>
-
-<%= link_to 'Edit', edit_product_path(@product) %> |
-<%= link_to 'Back', products_path %>
+<div class="row">
+  <div class ="col-md-8 col-md-offset-2 post">
+  	<div id="back_home">
+  		<%= link_to root_url do %>
+  		<img id="about_img" class="" src="/img/arrow.png" height="32px" width="43px"> Tillbaka till Hem
+  		<% end %>
+  	</div>
+	Image
+	<p>
+	  <h2><%= @product.name %></h2>
+	  <div class="pa">på</div>
+	  <h3> <%= @product.company.name %></h3>
+	</p>
+	
+	<p>
+	  <%= @product.description %>
+	</p>
+	
+	<p>
+	  <%= @product.company.name %><br>
+	  <%= @product.company.address %>
+	</p>
+	
+	<%= link_to 'Back', products_path %>
+  </div>
+</div>
