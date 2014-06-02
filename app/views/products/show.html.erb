@@ -1,4 +1,5 @@
 <% content_for :page_id do %>product_show_page<% end %>
+
 <div class="row">
   <div class ="col-md-8 col-md-offset-2 post">
   	<div id="back_home">
@@ -21,7 +22,5 @@
 	  <%= @product.company.name %><br>
 	  <%= @product.company.address %>
 	</p>
-	
-	<%= link_to 'Back', products_path %>
   </div>
 </div>
