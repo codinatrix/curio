@@ -33,6 +33,13 @@ gem 'rack-timeout'
 gem 'memcachier'
 gem 'dalli'
 
+#admin and nested form dependency
+gem 'rails_admin'
+gem 'nested_form', :git => "git://github.com/ryanb/nested_form.git"
+
+
 platforms :ruby do # linux
   gem 'unicorn'
 end
+
+gem "devise"
