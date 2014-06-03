@@ -242,3 +242,16 @@ body {
   color: #A68C7B;
   text-decoration: none;
 }
+
+.share-button {
+  float: left;
+  margin: 10px 10px 10px 0px;
+  width: 58px;
+  height: 20px;
+}
+
+.fb-share-button iframe {
+  //Prevents FB button from adding scrollbar
+  width: 58px!important;
+  height: 20px!important;
+}

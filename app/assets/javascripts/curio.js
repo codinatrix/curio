@@ -1,4 +1,6 @@
-$(window).load(function(){ 
+$(window).load(function(){
+	
+	//Masonry
 	$('#posts').imagesLoaded( function(){
 	    $('#posts').isotope({
 	      itemSelector : '.item',
@@ -7,7 +9,10 @@ $(window).load(function(){
 	        columnWidth : 20
 	      }
 	    });
-  });
+    });
+    
+    //Share buttons
+    Socialite.load($('#share-buttons'));
 
 });
 
