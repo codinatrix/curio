@@ -141,4 +141,9 @@ RailsAdmin.config do |config|
   #     # using `field` instead of `configure` will exclude all other fields and force the ordering
   # end
 
+  config.authenticate_with {}
+  config.authorize_with do
+    redirect_to main_app.new_admin_session_path unless current_admin
+  end
+  
 end
