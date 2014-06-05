@@ -26,6 +26,8 @@
 	<p>
 	  <%= @product.company.name %><br>
 	  <%= @product.company.address %>
+	  <marker latitude="<%= @product.company.latitude %>" longitude="<%= @product.company.longitude %>"></marker>
+	  <div id="map_canvas"></div>
 	</p>
   </div>
 </div>

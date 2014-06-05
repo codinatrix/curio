@@ -64,6 +64,7 @@ GEM
     execjs (2.1.0)
     font-awesome-rails (4.1.0.0)
       railties (>= 3.2, < 5.0)
+    geocoder (1.1.9)
     haml (4.0.5)
       tilt
     hike (1.2.3)
@@ -172,6 +173,7 @@ DEPENDENCIES
   coffee-rails (~> 4.0.0)
   dalli
   devise
+  geocoder
   jquery-rails
   kaminari
   memcachier

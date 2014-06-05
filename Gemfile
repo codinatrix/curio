@@ -33,6 +33,9 @@ gem 'rack-timeout'
 gem 'memcachier'
 gem 'dalli'
 
+# For Google Maps Api
+gem 'geocoder'
+
 #admin and nested form dependency
 gem 'rails_admin'
 gem 'nested_form', :git => "git://github.com/ryanb/nested_form.git"
