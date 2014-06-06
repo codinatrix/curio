@@ -1,0 +1,396 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+
+
+ */
+
+/* line 1, C:/Users/lala/My Documents/Workspace/curio/app/assets/stylesheets/products.css.scss */
+html {
+  height: 100%;
+}
+
+/* line 5, C:/Users/lala/My Documents/Workspace/curio/app/assets/stylesheets/products.css.scss */
+body {
+  height: 100%;
+  background-color: #91866E;
+  background-image: url("/img/bg.jpg");
+  padding-top: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+/* line 14, C:/Users/lala/My Documents/Workspace/curio/app/assets/stylesheets/products.css.scss */
+.container {
+  width: 1320px;
+}
+
+/* line 18, C:/Users/lala/My Documents/Workspace/curio/app/assets/stylesheets/products.css.scss */
+h2 {
+  font-family: 'Amatic SC', cursive;
+  font-size: 4em;
+}
+
+/* line 23, C:/Users/lala/My Documents/Workspace/curio/app/assets/stylesheets/products.css.scss */
+.paper {
+  background-color: #FFF;
+  background-image: url("/img/blizzard.png");
+  border-radius: 3px;
+  -webkit-box-shadow: 1px 1px 3px #333333;
+  box-shadow: 1px 1px 3px #333333;
+  padding: 20px;
+}
+
+/* line 32, C:/Users/lala/My Documents/Workspace/curio/app/assets/stylesheets/products.css.scss */
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+@media (max-width: 1338px) {
+  /* line 39, C:/Users/lala/My Documents/Workspace/curio/app/assets/stylesheets/products.css.scss */
+  .container {
+    width: 1000px;
+  }
+}
+@media (max-width: 1052px) {
+  /* line 45, C:/Users/lala/My Documents/Workspace/curio/app/assets/stylesheets/products.css.scss */
+  .container {
+    width: 680px;
+  }
+}
+@media (max-width: 700px) {
+  /* line 51, C:/Users/lala/My Documents/Workspace/curio/app/assets/stylesheets/products.css.scss */
+  .container {
+    width: 320px;
+  }
+}
+/*
+ * Alerts
+ */
+/* line 60, C:/Users/lala/My Documents/Workspace/curio/app/assets/stylesheets/products.css.scss */
+.alert {
+  width: 100%;
+  height: 75px;
+  position: absolute;
+  top: 0px;
+  margin: 0 auto 20px auto;
+  padding: 25px 15px;
+  text-align: center;
+  border-radius: 0px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  cursor: default;
+  display: block;
+  z-index: 1000;
+  box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+  font-size: 16px;
+  font-weight: bold;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.6);
+  letter-spacing: 1.5px;
+  background: none repeat scroll 0 0 #CFE4D4;
+  border: 1px solid #7CE294;
+  color: #2B703B;
+  -webkit-transform: translateY(-75px);
+  -webkit-animation: slideDown 2.5s 1.0s 1 ease forwards;
+  -moz-transform: translateY(-75px);
+  -moz-animation: slideDown 0.5s 1.0s 1 ease forwards;
+}
+
+/* line 92, C:/Users/lala/My Documents/Workspace/curio/app/assets/stylesheets/products.css.scss */
+.alert-error {
+  background: none repeat scroll 0 0 #E4CFD0;
+  border: 1px solid #EAC99F;
+  color: #70332B;
+}
+
+@-webkit-keyframes slideDown {
+  /* line 99, C:/Users/lala/My Documents/Workspace/curio/app/assets/stylesheets/products.css.scss */
+  100% {
+    -webkit-transform: translateY(0px);
+  }
+}
+
+@-moz-keyframes slideDown {
+  /* line 102, C:/Users/lala/My Documents/Workspace/curio/app/assets/stylesheets/products.css.scss */
+  100% {
+    -moz-transform: translateY(0px);
+  }
+}
+
+/*
+ * Home page
+ */
+/* line 111, C:/Users/lala/My Documents/Workspace/curio/app/assets/stylesheets/products.css.scss */
+.item {
+  width: 310px;
+}
+
+/* line 115, C:/Users/lala/My Documents/Workspace/curio/app/assets/stylesheets/products.css.scss */
+.item img.image {
+  max-width: 100%;
+  margin-top: 9px;
+}
+
+/* line 120, C:/Users/lala/My Documents/Workspace/curio/app/assets/stylesheets/products.css.scss */
+.well {
+  background-color: #FFFFFF;
+  padding: 0px;
+  -webkit-box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+  -moz-box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+  box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+  border: none;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+/* line 135, C:/Users/lala/My Documents/Workspace/curio/app/assets/stylesheets/products.css.scss */
+.well:hover {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray;
+  /* IE 6-9 */
+}
+
+@-moz-document url-prefix() {
+  /* line 146, C:/Users/lala/My Documents/Workspace/curio/app/assets/stylesheets/products.css.scss */
+  .well:hover {
+    opacity: 0.7;
+  }
+}
+
+/* line 151, C:/Users/lala/My Documents/Workspace/curio/app/assets/stylesheets/products.css.scss */
+.well img {
+  padding: 10px;
+}
+
+/* line 155, C:/Users/lala/My Documents/Workspace/curio/app/assets/stylesheets/products.css.scss */
+.info {
+  background-color: #F2F0F0;
+  border-radius: 0px 0px 3px 3px;
+  border-top: 1px solid #D9D4D4;
+  box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+  color: #333333;
+  font-size: 14px;
+  padding: 7px 11px;
+}
+
+/* line 165, C:/Users/lala/My Documents/Workspace/curio/app/assets/stylesheets/products.css.scss */
+.info h2 {
+  font-size: 20px;
+  margin: 0px;
+  color: #683822;
+  font-weight: bold;
+  text-shadow: rgba(255, 255, 255, 0.5) 0px 3px 3px;
+  font-family: 'PT Sans', sans-serif;
+}
+
+/* line 174, C:/Users/lala/My Documents/Workspace/curio/app/assets/stylesheets/products.css.scss */
+.info a {
+  text-shadow: 0 0 1px rgba(111, 134, 134, 0.3);
+  color: #000000;
+}
+
+/* line 179, C:/Users/lala/My Documents/Workspace/curio/app/assets/stylesheets/products.css.scss */
+.info a:hover {
+  text-decoration: none;
+}
+
+/* line 183, C:/Users/lala/My Documents/Workspace/curio/app/assets/stylesheets/products.css.scss */
+.info a:hover:before, .info a:focus:before {
+  opacity: 1;
+  -webkit-transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
+  -moz-transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
+  transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
+}
+
+/* line 190, C:/Users/lala/My Documents/Workspace/curio/app/assets/stylesheets/products.css.scss */
+.info a:before {
+  color: #47EDFF;
+  content: attr(data-hover);
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+  -webkit-transform: scale(1.1) translateX(10px) translateY(-10px) rotate(4deg);
+  -moz-transform: scale(1.1) translateX(10px) translateY(-10px) rotate(4deg);
+  transform: scale(1.1) translateX(10px) translateY(-10px) rotate(4deg);
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+  -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+  pointer-events: none;
+}
+
+/* line 206, C:/Users/lala/My Documents/Workspace/curio/app/assets/stylesheets/products.css.scss */
+.corner-stamp {
+  width: 630px;
+  height: 414px;
+  padding: 0px 0px 15px 0px;
+}
+
+@media (max-width: 700px) {
+  /* line 213, C:/Users/lala/My Documents/Workspace/curio/app/assets/stylesheets/products.css.scss */
+  .corner-stamp {
+    width: 310px;
+    height: 210px;
+    padding: 0px;
+  }
+}
+/* line 220, C:/Users/lala/My Documents/Workspace/curio/app/assets/stylesheets/products.css.scss */
+.corner-stamp img {
+  border-radius: 3px;
+  width: 100%;
+}
+
+/* Isotope Transitions
+------------------------------- */
+/* line 229, C:/Users/lala/My Documents/Workspace/curio/app/assets/stylesheets/products.css.scss */
+.isotope,
+.isotope .item {
+  -webkit-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  -ms-transition-duration: 0.8s;
+  -o-transition-duration: 0.8s;
+  transition-duration: 0.8s;
+}
+
+/* line 237, C:/Users/lala/My Documents/Workspace/curio/app/assets/stylesheets/products.css.scss */
+.isotope {
+  -webkit-transition-property: height, width;
+  -moz-transition-property: height, width;
+  -ms-transition-property: height, width;
+  -o-transition-property: height, width;
+  transition-property: height, width;
+}
+
+/* line 245, C:/Users/lala/My Documents/Workspace/curio/app/assets/stylesheets/products.css.scss */
+.isotope .item {
+  -webkit-transition-property: -webkit-transform, opacity;
+  -moz-transition-property: -moz-transform, opacity;
+  -ms-transition-property: -ms-transform, opacity;
+  -o-transition-property: top, left, opacity;
+  transition-property: transform, opacity;
+}
+
+/* responsive media queries */
+@media (max-width: 768px) {
+  /* line 257, C:/Users/lala/My Documents/Workspace/curio/app/assets/stylesheets/products.css.scss */
+  header h1 small {
+    display: block;
+  }
+
+  /* line 261, C:/Users/lala/My Documents/Workspace/curio/app/assets/stylesheets/products.css.scss */
+  header div.description {
+    padding-top: 9px;
+    padding-bottom: 4px;
+  }
+
+  /* line 266, C:/Users/lala/My Documents/Workspace/curio/app/assets/stylesheets/products.css.scss */
+  .isotope .item {
+    position: static !important;
+    -webkit-transform: translate(0px, 0px) !important;
+    -moz-transform: translate(0px, 0px) !important;
+    transform: translate(0px, 0px) !important;
+  }
+}
+/*
+ * Show product page
+ * /
+ */
+/* line 280, C:/Users/lala/My Documents/Workspace/curio/app/assets/stylesheets/products.css.scss */
+#product_show_page h2, #product_show_page .pa {
+  font-family: 'Satisfy', cursive;
+}
+
+/* line 284, C:/Users/lala/My Documents/Workspace/curio/app/assets/stylesheets/products.css.scss */
+#product_show_page h2, #product_show_page h3, #product_show_page .pa {
+  text-align: center;
+  margin: 5px;
+}
+
+/* line 289, C:/Users/lala/My Documents/Workspace/curio/app/assets/stylesheets/products.css.scss */
+#product_show_page h3 {
+  font-family: 'PT Sans', sans-serif;
+  margin-bottom: 10px;
+  color: #5EA7B4;
+}
+
+/* line 295, C:/Users/lala/My Documents/Workspace/curio/app/assets/stylesheets/products.css.scss */
+#product_show_page .pa {
+  font-size: 1.4em;
+}
+
+/* line 299, C:/Users/lala/My Documents/Workspace/curio/app/assets/stylesheets/products.css.scss */
+#product_show_page #back_home a {
+  font-family: 'PT Sans',sans-serif;
+  color: #A68C7B;
+  text-decoration: none;
+}
+
+/* line 305, C:/Users/lala/My Documents/Workspace/curio/app/assets/stylesheets/products.css.scss */
+.share-button {
+  float: left;
+  margin: 10px 10px 10px 0px;
+  width: 58px;
+  height: 20px;
+}
+
+/* line 312, C:/Users/lala/My Documents/Workspace/curio/app/assets/stylesheets/products.css.scss */
+.fb-share-button iframe {
+  width: 58px !important;
+  height: 20px !important;
+}
+
+/* line 318, C:/Users/lala/My Documents/Workspace/curio/app/assets/stylesheets/products.css.scss */
+#map_canvas {
+  width: 100%;
+  height: 300px;
+  overflow: visible;
+}
+
+/*
+ * Contact page
+ */
+/* line 329, C:/Users/lala/My Documents/Workspace/curio/app/assets/stylesheets/products.css.scss */
+#tipsa_page textarea {
+  border: 3px dashed #372D20;
+  background-color: rgba(0, 0, 0, 0);
+  color: #372D20;
+  height: 200px;
+  width: 100%;
+  line-height: 150%;
+  padding: 15px;
+}
+
+/* line 339, C:/Users/lala/My Documents/Workspace/curio/app/assets/stylesheets/products.css.scss */
+#tipsa_page input[type=submit] {
+  background: url("/img/tipsa.png");
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  width: 174px;
+  height: 53px;
+  border: 0px;
+  background-color: none;
+  cursor: pointer;
+  outline: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 354, C:/Users/lala/My Documents/Workspace/curio/app/assets/stylesheets/products.css.scss */
+#tipsa_page input[type=submit]:hover {
+  background-position: 0px -53px;
+}
