@@ -152,23 +152,31 @@ var CURIO = function() {
 			]
 			
 			google.maps.event.addDomListener(window, 'load', function(){
-			var map_canvas = document.getElementById('map_canvas');
-			var mark = $('marker:first');
-			var lat_lng = new google.maps.LatLng(mark.attr('latitude'),mark.attr('longitude'));
-		    var map_options = {
-		      center: lat_lng,
-		      zoom: 15,
-		      mapTypeId: google.maps.MapTypeId.ROADMAP,
-		      styles: map_style
-		    }
-		    var map = new google.maps.Map(map_canvas, map_options);
-		    var marker = new google.maps.Marker({
-			  position: lat_lng,
-			  map: map,
-			  title: 'Hello World!'
+				var map_canvas = document.getElementById('map_canvas');
+				var mark = $('marker:first');
+				var lat_lng = new google.maps.LatLng(mark.attr('latitude'),mark.attr('longitude'));
+			    var map_options = {
+			      center: lat_lng,
+			      zoom: 15,
+			      mapTypeId: google.maps.MapTypeId.ROADMAP,
+			      styles: map_style
+			    }
+			    var map = new google.maps.Map(map_canvas, map_options);
+			    var marker = new google.maps.Marker({
+				  position: lat_lng,
+				  map: map,
+				  title: 'Hello World!'
+				});
 			});
+			
+			/*
+			 * Alert
+			 */
+			$(".alert button.close").click(function (e) {
+			    $(this).parent().slideUp('slow');
 			});
-		}
+			
+		}//End of Init
 	}
 }();
 

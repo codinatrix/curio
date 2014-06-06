@@ -7,13 +7,19 @@
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <script src="https://maps.googleapis.com/maps/api/js"></script>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
   
   <%= csrf_meta_tags %>
 </head>
 <body id="<%= yield :page_id %>">
+	
+<% flash.each do |type, message| %>
+  <div class="alert alert-<%= twitterized_type(type) %>"><button type="button" class="close" >x</button><p><%= message %></p></div>
+<% end %>
 
 <div id="page" class="container">
 <%= yield %>
