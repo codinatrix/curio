@@ -151,7 +151,7 @@ var CURIO = function() {
 			    }
 			]
 			
-			google.maps.event.addDomListener(window, 'load', function(){
+			google.maps.event.addDomListener(window, 'page:change', function(){
 				var map_canvas = document.getElementById('map_canvas');
 				var mark = $('marker:first');
 				var lat_lng = new google.maps.LatLng(mark.attr('latitude'),mark.attr('longitude'));
