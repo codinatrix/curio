@@ -181,6 +181,8 @@ var CURIO = function() {
 	return {
 		init : function() {
 			
+			var mapObj = new mapClass();
+			mapObj.init();
 			if ($("#posts").length > 0) {
 				//Alert
 				$(".alert button.close").click(function (e) {
@@ -189,10 +191,7 @@ var CURIO = function() {
 				var masonyObj = new masonyClass();
 				masonyObj.init();
 			}
-			else if ($("#map_canvas").length > 0) {
-				var mapObj = new mapClass();
-				mapObj.init();
-				
+			else if ($("#map_canvas").length > 0) {			
 				//Share buttons
 				Socialite.load($('#share-buttons'));
 			}
